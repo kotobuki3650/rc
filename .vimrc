@@ -26,10 +26,12 @@ nnoremap <silent> ]B :blast<CR>
 
 cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
 
-inoremap { {}<LEFT>
-inoremap {<Enter> {}<LEFT><CR><ESC><S-o><TAB>
 inoremap ( ()<LEFT>
 inoremap (<ESC> ()
 inoremap (<Enter> ()<LEFT><CR><ESC><S-o><TAB>
+inoremap { {}<LEFT>
+inoremap {<ESC> {}
+inoremap {<Enter> {}<LEFT><CR><ESC><S-o><TAB>
 inoremap [ []<LEFT>
+inoremap [<ESC> []
 inoremap [<Enter> []<LEFT><CR><ESC><S-o><TAB>
